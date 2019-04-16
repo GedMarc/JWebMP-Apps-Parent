@@ -1,0 +1,4 @@
+[submodule "JWebMPHomePage"]
+	path = JWebMPHomePage
+	url = https://github.com/GedMarc/JWebMPHomePage.git
+	ignore = dirty
