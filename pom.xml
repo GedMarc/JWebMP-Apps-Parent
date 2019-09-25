@@ -11,7 +11,7 @@
     <artifactId>jwebmp-apps</artifactId>
     <packaging>pom</packaging>
 
-    <name>Guiced EE Modules</name>
+    <name>JWebMP Apps</name>
     <description>The root module packager for the Guiced EE Framework</description>
 
     <profiles>
