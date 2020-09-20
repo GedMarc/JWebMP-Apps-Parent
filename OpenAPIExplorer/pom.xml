@@ -50,31 +50,26 @@
         <dependency>
             <groupId>com.jwebmp.plugins.security</groupId>
             <artifactId>jwebmp-plugins-local-storage-security</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>hibernate-jcache</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>cache-annotations-ri-guice</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.jwebmp.plugins.iconsets</groupId>
             <artifactId>jwebmp-font-awesome5</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.jwebmp.plugins.jquery</groupId>
             <artifactId>jwebmp-jquery-ui</artifactId>
-            <type>jar</type>
         </dependency>
 
     </dependencies>
