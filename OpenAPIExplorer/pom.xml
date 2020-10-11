@@ -53,16 +53,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>hibernate-jcache</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>cache-annotations-ri-guice</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>com.jwebmp.plugins.iconsets</groupId>
             <artifactId>jwebmp-font-awesome5</artifactId>
         </dependency>
@@ -72,89 +62,17 @@
             <artifactId>jwebmp-jquery-ui</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.jwebmp.plugins.bootstrap</groupId>
+            <artifactId>jwebmp-bootstrap</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.14</version>
+        </dependency>
     </dependencies>
-
-    <build>
-        <finalName>OpenAPIExplorer</finalName>
-
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <annotationProcessorPaths>
-                        <annotationProcessorPath>
-                            <groupId>org.hibernate</groupId>
-                            <artifactId>hibernate-jpamodelgen</artifactId>
-                            <version>5.4.22.Final</version>
-                        </annotationProcessorPath>
-                        <path>
-                            <groupId>com.guicedee.services</groupId>
-                            <artifactId>jakarta.xml.bind-api</artifactId>
-                            <version>${project.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                    <compilerArguments>
-                        <AaddGeneratedAnnotation>false</AaddGeneratedAnnotation>
-                        <Adebug>true</Adebug>
-                    </compilerArguments>
-                </configuration>
-            </plugin>
-        </plugins>
-
-
-        <resources>
-            <resource>
-                <directory>jar-resources</directory>
-                <excludes>
-                    <exclude>**/*.gzip</exclude>
-                    <exclude>**/*.map</exclude>
-                    <exclude>**/*.md</exclude>
-                    <exclude>**/*.md</exclude>
-                    <exclude>**/package.json</exclude>
-                    <exclude>**/bower.json</exclude>
-                    <exclude>**/.bower.json</exclude>
-                    <exclude>**/.gitignore</exclude>
-                    <exclude>**/.jshint</exclude>
-                    <exclude>**/.jshint</exclude>
-                    <exclude>**/Gruntfile.js</exclude>
-                    <exclude>**/*.sh</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.js</include>
-                    <include>**/*.json</include>
-                    <include>**/*.css</include>
-                    <include>**/*.min</include>
-                    <include>**/*.html</include>
-                    <include>**/*.htm</include>
-                    <include>**/*.txt</include>
-                    <include>**/*.sql</include>
-                </includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>**/*.gzip</exclude>
-                    <exclude>**/*.map</exclude>
-                    <exclude>**/*.md</exclude>
-                    <exclude>**/*.md</exclude>
-                    <exclude>**/package.json</exclude>
-                    <exclude>**/bower.json</exclude>
-                    <exclude>**/.bower.json</exclude>
-                    <exclude>**/.gitignore</exclude>
-                    <exclude>**/.jshint</exclude>
-                    <exclude>**/.jshint</exclude>
-                    <exclude>**/Gruntfile.js</exclude>
-                    <exclude>**/*.sh</exclude>
-                </excludes>
-            </resource>
-        </resources>
-    </build>
-
 
     <licenses>
         <license>
