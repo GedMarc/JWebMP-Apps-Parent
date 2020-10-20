@@ -1,40 +1,29 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <artifactId>dev-kit</artifactId>
+        <groupId>com.guicedee</groupId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.jwebmp.apps</groupId>
     <artifactId>openapi-explorer</artifactId>
     <packaging>jar</packaging>
     <name>OpenAPIExplorer</name>
-
-    <version>0.0.0_0-SNAPSHOT</version>
 
     <description>The OpenAPI Explorer based on JWebMP</description>
 
     <url>https://jwebmp.com</url>
 
 	<properties>
-		<maven.compiler.release>14</maven.compiler.release>
+        <jdk.release>14</jdk.release>
 	</properties>
+
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.guicedee</groupId>
-                <artifactId>guicedee-bom</artifactId>
-                <type>pom</type>
-                <scope>import</scope>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.guicedee</groupId>
-                <artifactId>guicedee-parent</artifactId>
-                <type>pom</type>
-                <scope>import</scope>
-                <version>${project.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>com.jwebmp</groupId>
                 <artifactId>jwebmp-bom</artifactId>
@@ -42,16 +31,11 @@
                 <scope>import</scope>
                 <version>${project.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.jwebmp.plugins.security</groupId>
-            <artifactId>jwebmp-plugins-local-storage-security</artifactId>
-        </dependency>
 
+    <dependencies>
         <dependency>
             <groupId>com.jwebmp.plugins.iconsets</groupId>
             <artifactId>jwebmp-font-awesome5</artifactId>
@@ -68,46 +52,19 @@
         </dependency>
 
         <dependency>
+            <groupId>com.jwebmp.plugins.bootstrap</groupId>
+            <artifactId>jwebmp-bootstrap-dialog4</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.guicedee</groupId>
+            <artifactId>guiced-undertow</artifactId>
         </dependency>
     </dependencies>
-
-    <licenses>
-        <license>
-            <name>GPL 3</name>
-            <url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
-    <organization>
-        <name>Marc Magon</name>
-        <url>http://jwebmp.com</url>
-    </organization>
-
-    <scm>
-        <url>https://github.com/GedMarc?tab=repositories</url>
-    </scm>
-
-    <developers>
-        <developer>
-            <id>GedMarc</id>
-            <name>Marc Magon</name>
-            <email>marc.magon@gmail.com</email>
-            <url>https://github.com/GedMarc</url>
-        </developer>
-    </developers>
-
-    <issueManagement>
-        <system>Jira</system>
-        <url>https://www.jwebmp.com/jira</url>
-    </issueManagement>
-
-    <ciManagement>
-        <system>TeamCity</system>
-        <url>http://jwebmp.com/teamcity</url>
-    </ciManagement>
 
 </project>
