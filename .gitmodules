@@ -2,3 +2,6 @@
 	path = JWebMPHomePage
 	url = https://github.com/GedMarc/JWebMPHomePage.git
 	ignore = dirty
+[submodule "APIExplorer"]
+	path = APIExplorer
+	url = https://github.com/GedMarc/OpenAPIExplorer.git
