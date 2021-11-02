@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.apps</groupId>
     <artifactId>jwebmp-apps</artifactId>
     <packaging>pom</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>JWebMP Apps</name>
     <description>The root module packager for the Guiced EE Framework</description>
 
